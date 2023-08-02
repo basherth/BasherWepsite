@@ -28,7 +28,7 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: fit-content;
+    width: 200px;
 
 }
 
@@ -376,7 +376,7 @@ footer .github a:hover {
 
 
 
-@media (max-width:767px) {
+@media (max-width:510px) {
 
 
     header .name {
@@ -400,11 +400,13 @@ footer .github a:hover {
     .experiences .images h1 {
         font-size: 20px
     }
+
     .experiences .images i {
         font-size: 70px;
     }
 
-    .contact-conent .phone  a  , .contact-conent .mail  a {
+    .contact-conent .phone a,
+    .contact-conent .mail a {
         font-size: 16px;
 
     }
@@ -419,3 +421,42 @@ footer .github a:hover {
     }
 
 }
+
+
+@media (max-width:530px) {
+
+
+    .copy-right {
+        font-size: 14px;
+    }
+
+    footer .links div a i {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:350px) {
+
+
+    .copy-right {
+        font-size: 12px;
+    }
+
+    footer .links div a i {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
