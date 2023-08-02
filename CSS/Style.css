@@ -397,8 +397,16 @@ footer .github a:hover {
 
     }
 
+    .experiences .images h1 {
+        font-size: 20px
+    }
     .experiences .images i {
-        font-size: 100px;
+        font-size: 70px;
+    }
+
+    .contact-conent .phone  a  , .contact-conent .mail  a {
+        font-size: 16px;
+
     }
 
     footer {
