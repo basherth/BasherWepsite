@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+::selection {
+    color: black;
+    background-color:#c8c8c8 ;
+}
+
+
 
 :root {
     --main-color: #ffaf00
