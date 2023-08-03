@@ -136,27 +136,6 @@ header nav ul a {
 
 
 
-
-@media (max-width:556px) {
-    header .name {
-        font-size: 16px;
-
-
-    }
-
-    header nav ul li{
-        padding-right: 10px;
-        padding-top: 10px;
-    }
-
-    nav {
-        width: 80%;
-    }
-
-
-}
-
-
 .about {
     background-color: white;
     width: 100%;
@@ -391,7 +370,54 @@ footer .github a:hover {
 
 
 
-@media (max-width:510px) {
+
+@media (max-width:767px) {
+
+
+
+
+
+    .about img {
+        display: none;
+    }
+}
+
+.copy-right {
+    font-size: 14px;
+}
+
+footer .links div a i {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:580px) {
+
+
+    header .name {
+        font-size: 16px;
+
+
+    }
+
+
+
+    header nav ul li {
+
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    nav {
+        width: 80%;
+    }
 
 
     header .name {
@@ -439,27 +465,22 @@ footer .github a:hover {
 }
 
 
-@media (max-width:767px) {
-    .about img {
-        display: none;
-    }
-    }
 
 
 
-@media (max-width:530px) {
+
+@media (max-width:390px) {
+
+    header .name {
+        font-size: 12px;
 
 
-    .copy-right {
-        font-size: 14px;
     }
 
-    footer .links div a i {
-        font-size: 16px;
-    }
-}
 
-@media (max-width:350px) {
+    header ul li {
+        font-size: 12px;
+    }
 
 
     .copy-right {
