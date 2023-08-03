@@ -439,6 +439,14 @@ footer .github a:hover {
 }
 
 
+@media (max-width:767px) {
+    .about img {
+        display: none;
+    }
+    }
+
+
+
 @media (max-width:530px) {
 
 
