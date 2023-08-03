@@ -118,11 +118,11 @@ header nav ul li {
     transition: .2s;
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 45px;
 }
 
 header nav ul li:hover {
-    margin-top: 10px;
+    height: 60px;
 }
 
 
