@@ -118,7 +118,7 @@ header nav ul li {
     transition: .2s;
     display: flex;
     align-items: center;
-    height: 45px;
+    height: 50px;
 }
 
 header nav ul li:hover {
@@ -374,9 +374,6 @@ footer .github a:hover {
 @media (max-width:767px) {
 
 
-
-
-
     .about img {
         display: none;
     }
@@ -415,9 +412,7 @@ footer .links div a i {
         padding-top: 10px;
     }
 
-    nav {
-        width: 80%;
-    }
+}
 
 
     header .name {
@@ -462,7 +457,7 @@ footer .links div a i {
         font-size: 20px;
     }
 
-}
+
 
 
 
@@ -480,6 +475,27 @@ footer .links div a i {
 
     header ul li {
         font-size: 12px;
+    }
+
+
+    .copy-right {
+        font-size: 12px;
+    }
+
+    footer .links div a i {
+        font-size: 12px;
+    }
+}
+@media (max-width:331px) {
+
+    header .name {
+        font-size: 11px;
+
+
+    }
+
+    header ul li {
+        font-size: 10px;
     }
 
 
