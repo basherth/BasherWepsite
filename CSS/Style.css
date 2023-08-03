@@ -2,12 +2,11 @@
     box-sizing: border-box;
 }
 
+
 ::selection {
     color: black;
-    background-color: #c8c8c8;
+    background-color:#c8c8c8 ;
 }
-
-
 
 :root {
     --main-color: #ffaf00
@@ -31,11 +30,11 @@ body {
     font-size: 25px;
     letter-spacing: 3px;
     position: absolute;
-    top: -65px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
-    z-index: 1;
+
 }
 
 .container {
@@ -74,9 +73,9 @@ header {
     background-color: white;
     width: 100%;
     position: fixed;
-    top: 0;
     z-index: 1;
-
+    position: fixed;
+    top: 0;
 }
 
 header .container {
@@ -89,10 +88,14 @@ header .container {
 header .name {
     font-size: 25px;
     color: var(--main-color);
-    font-weight: bold;
-    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: content-box;
+    height: 30px;
     display: flex;
     align-items: center;
+    font-weight: bold;
+
 }
 
 header .name span {
@@ -105,27 +108,22 @@ header .name span {
 header nav ul {
     list-style: none;
     display: flex;
-    padding: 0;
-    margin: 0;
-}
+    margin-top: 15px;
+    justify-content: end;
 
-header nav ul li {
-    height: 40px;
-    transition: .2s;
-    display: flex;
-    align-items: center;
-    padding-left: 40px;
 }
 
 header nav ul a {
     color: var(--main-color);
     text-decoration: none;
+    padding-left: 40px;
+    transition: .2s;
     font-weight: bold;
 }
 
 
-header nav ul li:hover {
-   height: 60px;
+header nav ul a:hover {
+    margin-top: 10px;
 }
 
 
@@ -153,14 +151,20 @@ header nav ul li:hover {
     width: 100%;
     height: 600px;
     background-color: var(--main-color);
+    /* background-image: url(../meda/Yellow-Pencil-Visual-CSS-Editor-For-Wordpress.png);
+    background-repeat:no-repeat ;
+    background-size:cover ; */
+
     position: relative;
-    margin-top: 110px;
+
 }
 
 
 
 .about img {
     position: absolute;
+    right: 0;
+    top: 0;
     height: 100%;
     max-width: 100%;
 
@@ -208,7 +212,7 @@ header nav ul li:hover {
 
 
 .experiences {
-    margin-top: 150px;
+    margin-top: 50px;
     position: relative;
     width: 100%;
     height: 400px;
@@ -220,13 +224,13 @@ header nav ul li:hover {
 
 .experiences .images {
     position: absolute;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
     text-align: center;
-    margin-top: 20px;
 }
 
 .experiences .images i {
@@ -243,8 +247,6 @@ header nav ul li:hover {
     position: relative;
     height: 300px;
     display: grid;
-    margin-top: 100px;
-
 }
 
 
@@ -257,7 +259,7 @@ header nav ul li:hover {
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .contact .phone a:hover {
@@ -426,14 +428,6 @@ footer .github a:hover {
 }
 
 
-
-@media (max-width:850px) {
-    .about img {
-        display: none;
-    }
-}
-
-
 @media (max-width:530px) {
 
 
@@ -457,3 +451,17 @@ footer .github a:hover {
         font-size: 12px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
