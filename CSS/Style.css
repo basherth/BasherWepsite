@@ -34,7 +34,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
-
+    z-index: 1;
 }
 
 .container {
@@ -145,9 +145,13 @@ header nav ul a {
     /* background-image: url(../meda/Yellow-Pencil-Visual-CSS-Editor-For-Wordpress.png);
     background-repeat:no-repeat ;
     background-size:cover ; */
-
     position: relative;
+    top: 150px;
 
+}
+
+.about .title {
+    top: -70px;
 }
 
 
@@ -155,8 +159,8 @@ header nav ul a {
 .about img {
     position: absolute;
     right: 0;
-    top: 0;
-    height: 100%;
+    top: 100px;
+    height: 500px;
     max-width: 100%;
 
 }
@@ -167,6 +171,7 @@ header nav ul a {
 
     position: absolute;
     top: 100px;
+   
 
 }
 
@@ -175,12 +180,14 @@ header nav ul a {
 
 .about-content h1 {
     color: white;
+    font-size: 50px;
 }
 
 .about-content p {
     color: #707070;
     max-width: 400px;
     padding-bottom: 40px;
+    font-size: 17px;
 }
 
 .about-content a {
@@ -203,7 +210,7 @@ header nav ul a {
 
 
 .experiences {
-    margin-top: 50px;
+    margin-top: 200px;
     position: relative;
     width: 100%;
     height: 400px;
@@ -222,6 +229,7 @@ header nav ul a {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
     text-align: center;
+    color: var(--main-color);
 }
 
 .experiences .images i {
@@ -250,16 +258,22 @@ header nav ul a {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-    margin-top: 100px;
+    column-gap: 50px;
+    margin-top: 80px;
 }
 
 .contact-conent i {
     font-size: 70px;
+
 }
 
 .contact .phone a:hover {
-    color: green;
+    color: #17980e;
+}
+
+
+.contact .phone a i {
+    padding-right: 3px;
 }
 
 .contact .phone a {
@@ -269,14 +283,75 @@ header nav ul a {
     display: flex;
     align-items: center;
     font-size: 25px;
-    transition: all 0.2s ease 0s;
+    transition: 0.2s;
 }
+
 
 
 
 .contact .mail a:hover {
-    color: #ff5722;
+    color: #484b4a;
 }
+
+
+.contact .mail a svg {
+    padding-right: 3px;
+}
+
+
+.contact .mail a svg path {
+    transition: .2s;
+}
+
+.contact .mail a span {
+    transition: .1s
+}
+
+
+.contact .mail a:hover svg path:nth-of-type(1) {
+    fill: #4285F4;
+}
+
+.contact .mail a:hover svg path:nth-of-type(2) {
+    fill: #34A853;
+}
+
+.contact .mail a:hover svg path:nth-of-type(3) {
+    fill: #EA4335;
+}
+
+.contact .mail a:hover svg path:nth-of-type(4) {
+    fill: #FBBC04;
+}
+
+.contact .mail a:hover svg path:nth-of-type(5) {
+    fill: #C5221F;
+}
+
+
+
+
+/* 
+     .contact .mail a:hover span:nth-of-type(2) {
+        color: #4285F4;
+    }
+
+    .contact .mail a:hover span:nth-of-type(3) {
+        color: #EA4335;
+    }
+
+    .contact .mail a:hover span:nth-of-type(4) {
+        color: #FBBC04;
+    }
+
+    .contact .mail a:hover span:nth-of-type(5) {
+        color: #34A853;
+    } */
+
+
+
+
+
 
 .contact .mail a {
     color: black;
@@ -294,12 +369,13 @@ footer {
     background-color: black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
-    padding: 20px;
+    height: 60px;   
     padding-left: 100px;
+    padding-right: 25px;
 }
 
 
@@ -325,6 +401,7 @@ footer .links div a {
     transition: .3s;
     color: white;
     opacity: .5;
+    font-size: 14px;
 }
 
 
@@ -387,7 +464,11 @@ footer .github a:hover {
     .contact-conent i {
         font-size: 50px;
     }
-    
+
+    .contact-conent svg  {
+        width: 60px;
+    }
+
 
     header .name {
         color: #ff5722;
@@ -450,6 +531,13 @@ footer .github a:hover {
 
     header nav ul li {
         font-size: 12px;
+    }
+
+    .about-content h1 {
+        font-size: 40px;
+    }
+    .about-content p {
+        font-size: 15px;
     }
 
     .experiences .images h1 {
